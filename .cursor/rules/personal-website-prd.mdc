@@ -1,0 +1,78 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+PERSONAL WEBSITE
+PROJECT OVERVIEW
+Build a personal website for Nathan Douziech — 1-page, responsive, modern, mobile-friendly, and clean design. The goal is to present his profile, projects, and skills in a way that feels bold, personal, and startup ready.
+TECH STACK
+-	Framework = Next.js (App router)
+-	Styling = Tailwind CSS
+-	Hosting = Vercel-ready
+-	Animations = Framer Motion (for scroll fade-ins)
+-	TypeScript enabled
+-	Static content (no backend)
+STYLE GUIDE
+-	Font = Modern sans-serif (ex : Inter)
+-	Layout = Max-width 1024px center-aligned
+-	Spacing = Clean, lots of whit space
+-	Buttons = Rounded, shadowed, hover effects
+-	Animations = Subtle (fade in / slide in scroll)
+-	Mobile-first responsive design
+EXTRA FUNCTIONALITY
+-	Smooth scroll to sections
+-	Light/ Dark mode toggle
+-	Resume download button (link to static PDF)
+-	SEO-ready (meta tags for name, description)
+-	Favicon and title (Nathan Douziech | Portofolio)
+HOME PAGE (USER FLOW)
+#HERO SECTION
+Headline = Building AI that bypasses the job hunt BS
+Building AI that helps students skip the application pile and reach decision-makers directly
+Founder of Bypass – an AI-powered platform connecting students directly to decision-makers
+CTA = 
+-	See My Projects (scrolls to Projects)
+-	Download Resume
+-	Let’s Connect
+#ABOUT ME
+I'm Nathan, a finance professional turned tech entrepreneur with a passion for solving real-world problems through AI and automation.
+Quick Facts
+-	🎓 CLASSE PREPARATOIRE, GEM, UMEA UNIVERISTY, 42 PARIS
+-	💼 KPMG, EY, SOCIETE GENERALE
+-	🛠️ Currently building BYPASS (AI job outreach Saas)
+-	📍Based in PARIS – Open to global collabs
+#PROJECTS
+Bypass – AI Job Outreach Platform 
+-	A SaaS that helps students bypass traditional job applications and directly contact decision-makers. 
+-	Stack: Next.js, Supabase, OpenAI
+-	Early access launched in July 2025
+-	CTA = View Project
+#BUSINESS AND TECH SKILLS
+Biz Toolbox
+-	Product Strategy
+-	Business Development
+-	Financial Modelling
+-	Sales
+Tech Stack
+-	Frontend: React, Next.js, Tailwind
+-	Backend: Node.js, Python, Supabase
+-	AI: OpenAI API, Prompt Engineering
+-	Infa: Vercel, Git, Stripe
+#RESUME HIGHLIGHTS
+(Download resume PDF available)
+Education 
+-	2025 | Master in Finance, UMEA UNIVERSITY
+-	2024 | Master in Management, GEM
+-	2023 | Software Development, 42 PARIS
+Work
+-	2024 | Corporate Credit Analyst, SOCIETE GENERALE
+-	2023 | Financial Audit, EY
+#LET’S CONNECT
+Whether you're looking to hire, partner, or just chat about AI, startups, or the future of work – I'd love to hear from you.
+Contact =
+-	Email = nathan.douziech@gmail.com
+-	LinkedIn = linkedin.com/in/nathan-douziech
+-	GitHub = github.com/Daifukund
+Interested in collaborating, hiring, or just chatting? Let’s talk.
+
