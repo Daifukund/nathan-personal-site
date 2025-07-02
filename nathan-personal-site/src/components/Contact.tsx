@@ -44,7 +44,7 @@ export default function Contact() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-8">
-            Let's Connect
+            Let&apos;s Connect
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-4">
             Whether you&apos;re looking to hire, partner, or just chat about AI, startups, 

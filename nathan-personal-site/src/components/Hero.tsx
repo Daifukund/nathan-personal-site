@@ -67,7 +67,7 @@ export default function Hero() {
             onClick={() => scrollToSection('contact')}
             className="bg-transparent hover:bg-blue-50 dark:hover:bg-blue-900/20 text-blue-600 dark:text-blue-400 border-2 border-blue-600 dark:border-blue-400 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:shadow-lg"
           >
-            Let's Connect
+            Let&apos;s Connect
           </button>
         </motion.div>
       </div>
