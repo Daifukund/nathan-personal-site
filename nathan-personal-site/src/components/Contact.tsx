@@ -47,11 +47,11 @@ export default function Contact() {
             Let's Connect
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-4">
-            Whether you're looking to hire, partner, or just chat about AI, startups, 
-            or the future of work – I'd love to hear from you.
+            Whether you&apos;re looking to hire, partner, or just chat about AI, startups, 
+            or the future of work – I&apos;d love to hear from you.
           </p>
           <p className="text-lg text-gray-500 dark:text-gray-400">
-            Interested in collaborating, hiring, or just chatting? Let's talk.
+            Interested in collaborating, hiring, or just chatting? Let&apos;s talk.
           </p>
         </motion.div>
         
@@ -100,7 +100,7 @@ export default function Contact() {
             
             <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
               Ready to discuss your next project, explore collaboration opportunities, 
-              or learn more about Bypass? Drop me a line and let's start the conversation.
+              or learn more about Bypass? Drop me a line and let&apos;s start the conversation.
             </p>
             
             <a

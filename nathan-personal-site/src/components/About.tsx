@@ -37,7 +37,7 @@ export default function About() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-              I'm Nathan, a finance professional turned tech entrepreneur with a passion for solving 
+              I&apos;m Nathan, a finance professional turned tech entrepreneur with a passion for solving 
               real-world problems through AI and automation.
             </p>
             
