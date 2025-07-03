@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { HeartIcon, RocketLaunchIcon, MapPinIcon, CalendarDaysIcon } from '@heroicons/react/24/solid'
+import { HeartIcon, RocketLaunchIcon, MapPinIcon } from '@heroicons/react/24/solid'
 import { EnvelopeIcon, CodeBracketIcon, UserIcon } from '@heroicons/react/24/outline'
 
 export default function Footer() {
@@ -92,7 +92,7 @@ export default function Footer() {
             
             <p className="text-gray-400 leading-relaxed mb-6 text-lg">
               Building AI solutions that revolutionize how students connect with opportunities. 
-              Let's create the future of work together.
+              Let&apos;s create the future of work together.
             </p>
 
             {/* Status Indicators */}

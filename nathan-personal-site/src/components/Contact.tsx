@@ -4,11 +4,9 @@ import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef, useState } from 'react'
 import { 
-  EnvelopeIcon,
   ChatBubbleLeftRightIcon,
   BriefcaseIcon,
   LightBulbIcon,
-  SparklesIcon,
   PaperAirplaneIcon,
   ClockIcon,
   MapPinIcon
@@ -19,38 +17,6 @@ export default function Contact() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
   const [hoveredCard, setHoveredCard] = useState<number | null>(null)
-  const [selectedReason, setSelectedReason] = useState<string>('')
-
-  const contactReasons = [
-    {
-      icon: BriefcaseIcon,
-      title: 'Hiring',
-      description: 'Looking for a tech entrepreneur with finance expertise',
-      color: 'from-blue-500 to-blue-600',
-      bgColor: 'bg-blue-50 dark:bg-blue-900/20'
-    },
-    {
-      icon: UserGroupIcon,
-      title: 'Partnership',
-      description: 'Interested in collaborating on AI or fintech projects',
-      color: 'from-green-500 to-green-600',
-      bgColor: 'bg-green-50 dark:bg-green-900/20'
-    },
-    {
-      icon: LightBulbIcon,
-      title: 'AI & Startups',
-      description: 'Want to discuss AI trends or startup strategies',
-      color: 'from-purple-500 to-purple-600',
-      bgColor: 'bg-purple-50 dark:bg-purple-900/20'
-    },
-    {
-      icon: ChatBubbleLeftRightIcon,
-      title: 'Just Chat',
-      description: 'Casual conversation about tech or career advice',
-      color: 'from-orange-500 to-orange-600',
-      bgColor: 'bg-orange-50 dark:bg-orange-900/20'
-    }
-  ]
 
   const contactLinks = [
     {
@@ -106,7 +72,7 @@ export default function Contact() {
             className="inline-flex items-center gap-2 bg-gradient-to-r from-green-100 to-blue-100 dark:from-green-900/30 dark:to-blue-900/30 text-green-800 dark:text-green-300 px-4 py-2 rounded-full text-sm font-medium mb-6"
           >
             <ChatBubbleLeftRightIcon className="w-4 h-4" />
-            <span>Let's connect!</span>
+            <span>Let&apos;s connect!</span>
           </motion.div>
           
           <h2 className="text-5xl sm:text-6xl font-bold text-gray-900 dark:text-white mb-8">
@@ -119,7 +85,7 @@ export default function Contact() {
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Whether you're looking to hire, partner, or discuss AI and startups – I'd love to hear from you.
+            Whether you&apos;re looking to hire, partner, or discuss AI and startups – I&apos;d love to hear from you.
           </motion.p>
 
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mt-8" />
@@ -218,7 +184,7 @@ export default function Contact() {
           className="text-center mt-16"
         >
           <motion.a
-            href={`mailto:nathan.douziech@gmail.com?subject=${selectedReason ? `${selectedReason} - ` : ''}Contact from Portfolio`}
+            href="mailto:nathan.douziech@gmail.com?subject=Contact from Portfolio"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-10 py-5 rounded-2xl font-bold text-lg transition-all duration-300 shadow-xl hover:shadow-2xl"

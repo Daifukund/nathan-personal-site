@@ -87,7 +87,7 @@ export default function Hero() {
           className="mb-12 space-y-4"
         >
           <p className="text-lg sm:text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto font-medium">
-          I'm <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent">
+          I&apos;m <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent">
               Nathan Douziech
             </span>
             , a tech entrepreneur blending business insight and technical execution to build smart tools that cut through noise.

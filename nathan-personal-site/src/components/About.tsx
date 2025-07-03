@@ -97,11 +97,11 @@ export default function About() {
                 animate={isInView ? { opacity: 1 } : { opacity: 0 }}
                 transition={{ duration: 1, delay: 0.5 }}
               >
-                I'm <span className="font-bold text-blue-600 dark:text-blue-400">Nathan</span>, a finance professional turned tech entrepreneur with a passion for solving real-world problems through <span className="font-bold text-purple-600 dark:text-purple-400">AI and automation</span>.
+                I&apos;m <span className="font-bold text-blue-600 dark:text-blue-400">Nathan</span>, a finance professional turned tech entrepreneur with a passion for solving real-world problems through <span className="font-bold text-purple-600 dark:text-purple-400">AI and automation</span>.
               </motion.p>
               
               {/* Decorative Quote Mark */}
-              <div className="absolute -top-4 -left-4 text-6xl text-blue-200 dark:text-blue-800 font-serif">"</div>
+              <div className="absolute -top-4 -left-4 text-6xl text-blue-200 dark:text-blue-800 font-serif">&ldquo;</div>
             </div>
             
             {/* Enhanced Quick Facts */}
