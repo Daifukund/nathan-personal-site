@@ -5,15 +5,8 @@ import { useInView } from 'framer-motion'
 import { useRef, useState } from 'react'
 import { 
   DocumentArrowDownIcon, 
-  AcademicCapIcon, 
-  BriefcaseIcon,
-  CalendarDaysIcon,
   MapPinIcon,
   StarIcon,
-  TrophyIcon,
-  RocketLaunchIcon,
-  SparklesIcon,
-  BuildingOfficeIcon
 } from '@heroicons/react/24/outline'
 
 export default function Resume() {

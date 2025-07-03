@@ -5,13 +5,11 @@ import { useInView } from 'framer-motion'
 import { useRef, useState } from 'react'
 import { 
   ChatBubbleLeftRightIcon,
-  BriefcaseIcon,
-  LightBulbIcon,
   PaperAirplaneIcon,
   ClockIcon,
   MapPinIcon
 } from '@heroicons/react/24/outline'
-import { UserGroupIcon, RocketLaunchIcon } from '@heroicons/react/24/solid'
+import { RocketLaunchIcon } from '@heroicons/react/24/solid'
 
 export default function Contact() {
   const ref = useRef(null)

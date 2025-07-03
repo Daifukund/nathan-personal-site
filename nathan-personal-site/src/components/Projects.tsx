@@ -6,13 +6,11 @@ import { useRef, useState } from 'react'
 import Image from 'next/image'
 import { 
   ArrowTopRightOnSquareIcon, 
-  CodeBracketIcon, 
   SparklesIcon,
   RocketLaunchIcon,
   UserGroupIcon,
   ChartBarIcon,
   LightBulbIcon,
-  PlayIcon
 } from '@heroicons/react/24/outline'
 
 export default function Projects() {

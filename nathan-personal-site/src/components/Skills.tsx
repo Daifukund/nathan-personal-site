@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
-import { useRef, useState } from 'react'
+import { useRef } from 'react'
 import { 
   BriefcaseIcon, 
   CodeBracketIcon,
@@ -20,8 +20,6 @@ import {
 export default function Skills() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
-  const [hoveredSkill, setHoveredSkill] = useState<string | null>(null)
-  const [activeCategory, setActiveCategory] = useState<string>('all')
 
   const businessSkills = [
     { 
@@ -92,12 +90,8 @@ export default function Skills() {
     }
   }
 
-  const categories = ['all', 'business', 'frontend', 'backend', 'ai', 'infra']
-
   const getFilteredSkills = () => {
-    if (activeCategory === 'all') return techSkills
-    if (activeCategory === 'business') return {}
-    return { [activeCategory]: techSkills[activeCategory as keyof typeof techSkills] }
+    return techSkills
   }
 
   return (
@@ -132,73 +126,69 @@ export default function Skills() {
 
         <div className="grid lg:grid-cols-2 gap-8">
           {/* Business Skills */}
-          {(activeCategory === 'all' || activeCategory === 'business') && (
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-gray-200 dark:border-gray-700"
-            >
-              <div className="flex items-center gap-4 mb-8">
-                <motion.div 
-                  whileHover={{ rotate: 360 }}
-                  transition={{ duration: 0.8 }}
-                  className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center shadow-lg"
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-gray-200 dark:border-gray-700"
+          >
+            <div className="flex items-center gap-4 mb-8">
+              <motion.div 
+                whileHover={{ rotate: 360 }}
+                transition={{ duration: 0.8 }}
+                className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center shadow-lg"
+              >
+                <BriefcaseIcon className="w-8 h-8 text-white" />
+              </motion.div>
+              <div>
+                <h3 className="text-3xl font-bold text-gray-900 dark:text-white">
+                  Biz Toolbox
+                </h3>
+                <p className="text-green-600 dark:text-green-400">Strategic & Commercial</p>
+              </div>
+            </div>
+            
+            <div className="space-y-6">
+              {businessSkills.map((skill, index) => (
+                <motion.div
+                  key={skill.name}
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
+                  transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
+                  className="group p-4 rounded-2xl bg-gray-50 dark:bg-gray-700/50 hover:bg-white dark:hover:bg-gray-700 transition-all duration-300 cursor-pointer"
                 >
-                  <BriefcaseIcon className="w-8 h-8 text-white" />
+                  <div className="flex items-center gap-4 mb-3">
+                    <div className={`p-3 rounded-xl bg-gradient-to-r ${skill.color} shadow-lg group-hover:scale-110 transition-transform duration-300`}>
+                      <skill.icon className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="flex-1">
+                      <h4 className="font-bold text-gray-900 dark:text-white text-lg">
+                        {skill.name}
+                      </h4>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">
+                        {skill.description}
+                      </p>
+                    </div>
+                    <div className="text-2xl font-bold text-gray-900 dark:text-white">
+                      {skill.level}%
+                    </div>
+                  </div>
+                  
+                  {/* Animated Progress Bar */}
+                  <div className="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-3 overflow-hidden">
+                    <motion.div
+                      initial={{ width: 0 }}
+                      animate={isInView ? { width: `${skill.level}%` } : { width: 0 }}
+                      transition={{ duration: 1.5, delay: 0.8 + index * 0.2 }}
+                      className={`h-full bg-gradient-to-r ${skill.color} rounded-full relative`}
+                    >
+                      <div className="absolute inset-0 bg-white/20 animate-pulse" />
+                    </motion.div>
+                  </div>
                 </motion.div>
-                <div>
-                  <h3 className="text-3xl font-bold text-gray-900 dark:text-white">
-                    Biz Toolbox
-                  </h3>
-                  <p className="text-green-600 dark:text-green-400">Strategic & Commercial</p>
-                </div>
-              </div>
-              
-              <div className="space-y-6">
-                {businessSkills.map((skill, index) => (
-                  <motion.div
-                    key={skill.name}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
-                    transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
-                    onMouseEnter={() => setHoveredSkill(skill.name)}
-                    onMouseLeave={() => setHoveredSkill(null)}
-                    className="group p-4 rounded-2xl bg-gray-50 dark:bg-gray-700/50 hover:bg-white dark:hover:bg-gray-700 transition-all duration-300 cursor-pointer"
-                  >
-                    <div className="flex items-center gap-4 mb-3">
-                      <div className={`p-3 rounded-xl bg-gradient-to-r ${skill.color} shadow-lg group-hover:scale-110 transition-transform duration-300`}>
-                        <skill.icon className="w-6 h-6 text-white" />
-                      </div>
-                      <div className="flex-1">
-                        <h4 className="font-bold text-gray-900 dark:text-white text-lg">
-                          {skill.name}
-                        </h4>
-                        <p className="text-sm text-gray-600 dark:text-gray-400">
-                          {skill.description}
-                        </p>
-                      </div>
-                      <div className="text-2xl font-bold text-gray-900 dark:text-white">
-                        {skill.level}%
-                      </div>
-                    </div>
-                    
-                    {/* Animated Progress Bar */}
-                    <div className="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-3 overflow-hidden">
-                      <motion.div
-                        initial={{ width: 0 }}
-                        animate={isInView ? { width: `${skill.level}%` } : { width: 0 }}
-                        transition={{ duration: 1.5, delay: 0.8 + index * 0.2 }}
-                        className={`h-full bg-gradient-to-r ${skill.color} rounded-full relative`}
-                      >
-                        <div className="absolute inset-0 bg-white/20 animate-pulse" />
-                      </motion.div>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
-          )}
+              ))}
+            </div>
+          </motion.div>
           
           {/* Tech Skills */}
           <motion.div
