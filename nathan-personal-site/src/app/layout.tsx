@@ -6,13 +6,12 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Nathan Douziech | Portfolio",
-  description: "Building AI that bypasses the job hunt BS. Founder of Bypass – an AI-powered platform connecting students directly to decision-makers.",
-  keywords: "Nathan Douziech, AI, Bypass, startup, finance, tech entrepreneur, job platform",
-  authors: [{ name: "Nathan Douziech" }],
+  description: "Building AI that bypasses the job hunt BS. Tech entrepreneur passionate about solving real-world problems through AI and automation.",
+  keywords: "Nathan Douziech, AI, tech entrepreneur, finance, software development, job platform, automation",
   openGraph: {
-    title: "Nathan Douziech | Portfolio",
+    title: "Nathan Douziech | AI Builder & Tech Entrepreneur",
     description: "Building AI that bypasses the job hunt BS",
-    type: "website",
+    images: ['/og-image.png'],
   },
 };
 
