@@ -2,10 +2,6 @@
 
 A modern, responsive personal website built with Next.js, showcasing my journey from finance professional to tech entrepreneur. This site presents my profile, projects, and skills in a clean, mobile-first design.
 
-## 🚀 Live Demo
-
-Visit the live site: [nathan-douziech.vercel.app](https://nathan-douziech.vercel.app) *(update with actual URL)*
-
 ## 🛠️ Tech Stack
 
 - **Framework**: Next.js 15 (App Router)
@@ -190,12 +186,6 @@ This is a personal website, but feedback and suggestions are welcome! Feel free 
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 📞 Contact
-
-**Nathan Douziech**
-- Email: nathan.douziech@gmail.com
-- LinkedIn: [linkedin.com/in/nathan-douziech](https://linkedin.com/in/nathan-douziech)
-- GitHub: [github.com/Daifukund](https://github.com/Daifukund)
 
 ---
 
